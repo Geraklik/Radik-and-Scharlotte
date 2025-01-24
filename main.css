@@ -1,0 +1,277 @@
+/* Общий стиль страницы, чтобы разместить текст и чат по центру */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 100% высоты экрана */
+    margin: 0;
+    background-color: #f4f4f4;
+    text-align: center; /* Чтобы текст был по центру */
+}
+
+.welcome-message {
+    margin-bottom: 30px; /* Отступ между текстом и чатом */
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Стиль для блока с именем и статусом Шарлотты */
+.user-status {
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Отступ от статуса до чата */
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.last-seen {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.chat-container {
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.message-box {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.message.sent {
+    justify-content: flex-end;
+}
+
+.message.received {
+    justify-content: flex-start;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.sender-name {
+    font-weight: bold;
+}
+
+.last-seen {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.message-text {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.message.sent .avatar {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+input {
+    width: 80%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h1,p{
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+.chat-container {
+    width: 400px;
+    margin: 0 auto;
+}
+.message-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+}
+.input-container {
+    display: flex;
+    margin-top: 10px;
+}
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.input-container button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.input-container button:hover {
+    background-color: #45a049;
+}
+.user-status {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.user-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.last-seen {
+    color: #888;
+}
+.google-login {
+    margin-top: 20px;
+    text-align: center;
+}
+.google-btn {
+    background-color: #4285F4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.google-btn:hover {
+    background-color: #357ae8;
+}
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 2px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+#g_id_onload, .g_id_signin {
+    margin: 20px;
+}
+
+#user-info {
+    margin: 20px;
+    font-size: 16px;
+    color: #555;
+}
+footer {
+    background-color: #222; /* Темный фон */
+    color: #aaa; /* Светло-серый текст */
+    text-align: center;
+    padding: 15px 0; /* Отступы сверху и снизу */
+    font-size: 14px; /* Размер текста */
+    border-top: 1px solid #444; /* Тонкая линия сверху */
+    position: fixed; /* Фиксированное положение внизу */
+    bottom: 0; /* Положение внизу окна */
+    width: 100%; /* На всю ширину страницы */
+  }
+  
+  footer p {
+    margin: 0; /* Убираем отступы у текста */
+    line-height: 1.5; /* Удобный интервал строк */
+  }
+  
+  footer p a {
+    color: #4CAF50; /* Зеленая ссылка */
+    text-decoration: none; /* Без подчеркивания */
+    font-weight: bold;
+  }
+  
+  footer p a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+  }
+  .message.sent .message-text {
+    background-color: #d1f5d3; /* Цвет отправленных сообщений (зеленоватый) */
+}
+
+.message.received .message-text {
+    background-color: #f1f1f1; /* Цвет полученных сообщений (сероватый) */
+}
+.plik{
+    color: green;
+    margin: 20px;
+}
+footer {
+    background-color: #222; /* Темный фон */
+    color: #aaa; /* Светло-серый текст */
+    text-align: center;
+    padding: 10px 0; /* Отступы сверху и снизу */
+    font-size: 14px; /* Размер текста */
+    border-top: 1px solid #444; /* Тонкая линия сверху */
+    position: fixed; /* Фиксированное положение внизу */
+    bottom: 0; /* Положение внизу окна */
+    width: 100%; /* На всю ширину страницы */
+  }
+  
+  footer p {
+    margin: 0; /* Убираем отступы у текста */
+    line-height: 1.5; /* Удобный интервал строк */
+  }
+  
+  footer p a {
+    color: #4CAF50; /* Зеленая ссылка */
+    text-decoration: none; /* Без подчеркивания */
+    font-weight: bold;
+  }
+  
+  footer p a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+  }

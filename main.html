@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <title>Main Page</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+    <h1>Welcome to the Main Page!</h1>
+    <b class="plik">You have successfully logged in.</b>
+<body>
+
+</div>
+
+<div class="user-status">
+    <span class="user-name">Шарлотта</span>
+    <span class="last-seen" id="last-seen">В сети: был(а) недавно.</span>
+</div>
+
+<div class="chat-container">
+    <div class="message-box" id="message-box">
+        <!-- Сообщения будут вставляться сюда -->
+        <div class="message received">
+            <img src="шарлотта.png" alt="Avatar" class="avatar">
+            <span class="message-text">Hallo?</span>
+        </div>
+        <div class="message received">
+            <img src="шарлотта.png" alt="Avatar" class="avatar">
+            <span class="message-text">Radion bist du da?</span>
+        </div>
+        <div class="message received">
+            <img src="шарлотта.png" alt="Avatar" class="avatar">
+            <span class="message-text">Ist lemand hier?</span>
+        </div>
+    </div>
+    
+    <!-- Поле для ввода нового сообщения -->
+    <div class="input-container">
+        <input type="text" placeholder="Напишите сообщение..." id="message-input">
+        <button onclick="sendMessage()">Отправить</button>
+    </div>
+</div>
+<div class="container">
+    <h1>Google Login Demo</h1>
+    <div id="g_id_onload"
+         data-client_id="YOUR_CLIENT_ID"
+         data-context="signin"
+         data-callback="handleCredentialResponse"
+         data-auto_select="true"
+         data-itp_support="true">
+    </div>
+    <div class="g_id_signin"
+         data-type="standard"
+         data-shape="rectangular"
+         data-theme="outline"
+         data-text="signin_with"
+         data-size="large"
+         data-logo_alignment="left">
+    </div>
+    <p id="user-info"></p>
+</div>
+<p>Ваше местоположение не совподает с установленным, что означает, что вы не сможете зарегестрироваться, все ваши сообщения на 
+    этом сайте будут локальными, с дальнешей ифнормацией вы можете ознакомиться <a href="">тут</a> </p>
+  <script src="main.js"></script>
+</body>
+<footer>
+    <p>© 2025 <span>Все права защищены</span> | Сделано с ❤️ и заботой</p>
+  </footer>
+</html>
+
+</html>
